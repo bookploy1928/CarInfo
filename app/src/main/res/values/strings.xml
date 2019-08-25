@@ -3,4 +3,12 @@
     <string name="button_slot1">slot 1</string>
     <string name="button_slot2">slot 2</string>
     <string name="button_slot3">slot 3</string>
+    <string name="license_plate">ทะเบียนรถ</string>
+    <string name="brand_car">ยี่ห้อรถ</string>
+    <string name="driver_car">คนขับ</string>
+    <string name="license_plate1">License Plate</string>
+    <string name="car_brand">Car Brand</string>
+    <string name="driver_1">Driver</string>
+    <string name="update">Update</string>
+    <string name="license_plate2">License Number</string>
 </resources>
