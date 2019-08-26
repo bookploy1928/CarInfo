@@ -9,8 +9,8 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     var licenseCarSlot1 = ""
-    val carBrandSlot1 = ""
-    val driverSlot1 = ""
+    var carBrandSlot1 = ""
+    var driverSlot1 = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,16 +32,42 @@ class MainActivity : AppCompatActivity() {
 // Add code to perform the button click event
     }
     private fun addCar(view: View) {
-        val number = findViewById<EditText>(R.id.license_number2)
-        licenseCarSlot1 = number.text.toString()
+        val numberEdit = findViewById<EditText>(R.id.license_number2)
+        val carBrandEdit = findViewById<EditText>(R.id.carBrand)
+        val driverEdit = findViewById<EditText>(R.id.driver1)
+        licenseCarSlot1 = numberEdit.text.toString()
+        carBrandSlot1 = carBrandEdit.text.toString()
+        driverSlot1 = driverEdit.text.toString()
     }
 
     private fun showCarSlot1 (view: View) {
 
         val numberSlot1 = findViewById<Button>(R.id.slot1)
+        val numberEdit = findViewById<EditText>(R.id.license_number2)
+        val carBrandEdit = findViewById<EditText>(R.id.carBrand)
+        val driverEdit = findViewById<EditText>(R.id.driver1)
+        
         numberSlot1.text = licenseCarSlot1
         numberSlot1.visibility = View.GONE
         numberSlot1.visibility = View.VISIBLE
+
+        numberEdit.text = licenseCarSlot1
+        numberEdit.visibility = View.GONE
+        numberEdit.visibility = View.VISIBLE
+
+        carBrandEdit.text = carBrandSlot1
+        carBrandEdit.visibility = View.GONE
+        carBrandEdit.visibility = View.VISIBLE
+
+        driverEdit.text = driverSlot1
+        driverEdit.visibility = View.GONE
+        driverEdit.visibility = View.VISIBLE
+
+
+
+
+
+
 
     }
 
